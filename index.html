@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<title>微信双系统</title>
+<head>
+<meta http-equiv="cache-control" content="no-cache" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="main onepage-wrapper">
+	<section class="preload">
+		<img class="loading" src="images/loading.gif" />
+		<p class="loading-text">正在加载...<span class="progress">0%</span></p>
+	</section>
+	<section class="page page1">
+		<div class="page-container">
+			<div class="logo"></div>
+			<div class="android"></div>
+			<div class="windows"></div>
+			<div class="text"></div>
+			<p class="search">搜索“昂达”关注微信帐号</p>
+			<div class="arrow"></div>
+		</div>
+	</section>
+	<section class="page page2">
+		<div class="page-container">
+			<div class="logo"></div>
+			<div class="title"></div>
+			<div class="list">
+				<a href="product1.html"></a>
+				<a href="product2.html"></a>
+				<a href="product3.html"></a>
+				<a href="product4.html"></a>
+			</div>
+			<p class="search">搜索“昂达”关注微信帐号</p>
+		</div>
+	</section>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/onepagescroll.js"></script>
+<script type="text/javascript">
+$(function(){
+	onepagescroll.init();
+	$('body').bind("touchmove",function(e){
+		e.preventDefault();
+	});
+})
+</script>
+</body>
+</html>
